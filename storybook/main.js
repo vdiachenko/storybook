@@ -1,3 +1,5 @@
+import path from 'path'
+
 const stories = [<%= options.stories.map(s => `'${s}'`).join(",") %>]
 const addons  = [<%= options.addons.map(s => devalue(s)).join(",") %>,{
   name: '@storybook/addon-postcss',
